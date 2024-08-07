@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="round"></div>
+    <script src=""></script>
+    <script>
+        
+let round=document.querySelector(".round");
+function roundMove(){
+    window.addEventListener("mousemove",(e)=>{
+    round.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;
+    })
+}
+
+roundMove();
+
+    </script>
+</body>
+</html>
